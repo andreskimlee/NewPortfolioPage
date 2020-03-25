@@ -1,0 +1,18 @@
+.main-container { 
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+    text-align: center;
+}
+
+.left-container {
+    width: 25%;
+}
+
+.mid-container {
+    min-width: 50%;
+}
+
+.right-container {
+    width: 25%;
+}

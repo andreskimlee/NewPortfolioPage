@@ -1,4 +1,24 @@
 body { 
-  background-color: #0a192f;
+  background-color: #232931;
 
 }
+
+.loading-container {
+  display: flex;
+  flex-direction: column;
+  margin-left: 42%;
+  margin-top: 10%;
+}
+
+.loading-logo {
+  height: 40%;
+  width: 30%;
+	transition: .5s ease-out
+  
+}
+
+.loading-text {
+  height: 30%;
+  width: 30%;
+}
+
