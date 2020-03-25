@@ -1,0 +1,39 @@
+$color_2: rgb(136, 146, 176);
+
+.right-container {
+    width: 40px;
+    position: fixed;
+    bottom: 0px;
+    left: auto;
+    right: -50px;
+    z-index: 10;
+    color: rgb(168, 178, 209);
+    a {
+        font-family: monospace;
+        font-size: 14px;
+        letter-spacing: 0.1em;
+        -webkit-writing-mode: vertical-rl;
+        writing-mode: vertical-rl;
+        margin-left: 43%;
+
+        padding: 10px;
+        text-decoration: none;
+        color: $color_2;
+
+    }
+
+   
+}
+
+a:hover {
+    cursor: pointer;
+}
+
+.right-container::after {
+    content: "";
+    display: block;
+    width: 1px;
+    height: 90px;
+    background-color: rgb(168, 178, 209);
+    margin: 0px auto;
+}

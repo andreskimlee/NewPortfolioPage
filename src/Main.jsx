@@ -4,6 +4,7 @@ import RightSide from './RightSide'
 import Middle from './Middle'
 import './stylesheet/Main.scss'
 
+
 class Main extends React.Component {
     constructor(props) {
         super(props)

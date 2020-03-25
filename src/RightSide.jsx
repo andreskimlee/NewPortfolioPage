@@ -1,4 +1,5 @@
 import React from 'react';
+import './stylesheet/right.scss'
 
 class RightSide extends React.Component {
     constructor(props) {
@@ -13,7 +14,7 @@ class RightSide extends React.Component {
     render() {
         return (
             <div className="right-container">
-                Right
+                <a href="mailto:andreskimlee@gmail.com" class="email__StyledEmailLink-sc-2epoq-1 jxlTta">andreskimlee@gmail.com</a>
             </div>
         )
     }

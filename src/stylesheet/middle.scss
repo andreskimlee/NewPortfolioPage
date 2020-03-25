@@ -1,0 +1,222 @@
+$color_1: #4ecca3;
+$color_2: rgb(136, 146, 176);
+$color_3: #eeeeee;
+
+
+
+.About-Me-Container {
+    margin-top: 33.3%;
+    .About-me-header {
+        color: $color_3;
+        font-family: 'calibre';
+        font-size: 2rem;
+    }
+
+    .About-me-header:before {
+        content: "01.";
+        margin-right: 10px;
+        color: $color_1;
+        font-family: monospace;
+    }
+
+    .About-me-header:after {
+        content: "";
+    display: block;
+    height: 1px;
+    width: 300px;
+    background-color: rgb(45, 57, 82);
+    position: relative;
+    top: -5px;
+    margin-left: 20px;
+    }
+
+}
+
+.prof-container {
+    display: flex;
+    .bio-text {
+        width: 60%;
+        color: $color_2;
+        font-family: sans-serif;
+        line-height: 1.5;
+        font-size: 1.0rem;
+        max-width: 480px;
+    }
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    align-items: flex-start;
+    
+}
+
+
+.abc{
+    border: 1px solid $color_1;
+        position: relative;
+    right: -230px;
+    width: 40%;
+    height: 300px;
+    top: 0px;
+}
+
+
+
+.tech-list {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(140px, 200px));
+    overflow: hidden;
+    padding: 0px;
+    margin: 20px 0px 0px;
+    list-style: none;
+    li {
+        font-family: monospace;
+        font-size: 1.0rem;
+        line-height: 1.5rem;
+    }
+
+    margin-left: 5% ;
+
+}
+
+.tech-item::before {
+        content: "▹";
+        position: relative;     
+        color: rgb(100, 255, 218);
+        font-size: 14px;
+        line-height: 12px;
+        left: 0px;
+        margin-right: 10px;
+        
+}
+
+.funny-gif {
+    position: relative;
+    top: 0px;
+    left: -8px;
+    height: 10%;
+    width: 90%;
+}
+
+
+.funny-cont {
+    width: 40%;
+}
+
+.Experience-Container {
+    margin-top: 33% ;
+    
+    .experience-header {
+        color: $color_3;
+        font-family: 'calibre';
+        font-size: 2rem;
+    }
+
+    .experience-header:before {
+        content: "02.";
+        margin-right: 10px;
+        color: $color_1;
+        font-family: monospace;
+    }
+
+    .experience-header:after {
+        content: "";
+    display: block;
+    height: 1px;
+    width: 300px;
+    background-color: rgb(45, 57, 82);
+    position: relative;
+    top: -5px;
+    margin-left: 20px;
+    }
+
+}
+
+
+.Project-1 {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    -webkit-box-align: center;
+    align-items: center;
+    margin-bottom: 100px;
+    gap: 10px;
+    min-height: auto;
+    visibility: visible;
+    opacity: 1;
+    transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);
+    transition: opacity 0.5s cubic-bezier(0.645, 0.045, 0.355, 1) 0s, transform 0.5s cubic-bezier(0.645, 0.045, 0.355, 1) 0s;
+}
+
+
+
+.project-1-pic {
+    box-shadow: rgba(2, 12, 27, 0.7) 0px 10px 30px -15px;
+    position: relative;
+    z-index: 1;
+    grid-column: 1 / 8;
+    grid-row: 1 / -1;
+    border-radius: 4px;
+    transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1) 0s;
+    width: 100%;
+    height: 22.5rem;
+    margin-top: 15%;
+    object-fit: fill;
+}
+
+
+.project-1-rightside {
+        position: relative;
+        grid-column: 13 / 7;
+        grid-row: 1 / -1;
+        z-index: 2;
+        text-align: right;
+
+}
+.feat-header {
+    font-size: 13px;
+    font-weight: normal;
+    color: rgb(100, 255, 218);
+    font-family: "SF Mono", "Fira Code", "Fira Mono", "Roboto Mono", "Lucida Console", Monaco, monospace;
+    margin-top: 10px;
+    padding-top: 0px;
+}
+
+.Proj-name {
+    font-size: 28px;
+    color: $color_2;
+    margin: 0px 0px 20px;
+}
+
+.proj-description {
+    box-shadow: rgba(2, 12, 27, 0.7) 0px 10px 30px -15px;
+    position: relative;
+    z-index: 2;
+    background-color: rgb(23, 42, 69);
+    color: rgb(168, 178, 209);
+    transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1) 0s;
+    padding: 25px;
+    border-radius: 3px;
+    .proj-description-text {
+        font-size: 13px;
+    }
+}
+
+.tech-list2 {
+    -webkit-box-pack: end;
+    justify-content: flex-end;
+    position: relative;
+    z-index: 2;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0px;
+    margin: 25px 0px 10px;
+    list-style: none;
+}
+
+.tech-items {
+    font-family: "SF Mono", "Fira Code", "Fira Mono", "Roboto Mono", "Lucida Console", Monaco, monospace;
+    font-size: 13px;
+    color: rgb(136, 146, 176);
+    margin-right: 20px;
+    margin-bottom: 7px;
+    white-space: nowrap;
+}
