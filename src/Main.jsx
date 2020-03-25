@@ -18,7 +18,7 @@ class Main extends React.Component {
         return (
             <div className="main-container">
                 <LeftNav></LeftNav>
-                <Middle></Middle>
+                <Middle ></Middle>
                 <RightSide></RightSide>
             </div>
         )

@@ -1,0 +1,61 @@
+$color_1: #4ecca3;
+$color_2: rgb(136, 146, 176);
+$color_3: #eeeeee;
+
+.left-container {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    align-items: center;
+    padding: 0px;
+    margin: 0px;
+    list-style: none;
+    -webkit-box-align: center;
+    margin-top: 2%;
+}
+
+.linked-in {
+    fill: $color_2;
+    width: 10%;
+    margin-bottom: 10%;
+}
+
+.github {
+    fill: $color_2;
+    width: 10%;
+    margin-bottom: 10%;
+}
+
+.angel {
+    width: 10%;
+    margin-bottom: 10%;
+    g {
+        path {
+            fill: $color_2;
+        }
+    }
+    height: 30px;
+}
+
+.linked-in:hover, .github:hover {
+    transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1) 0s;
+    fill:$color_1;
+    display: inline-block;
+    text-decoration-skip-ink: auto;
+    color: inherit;
+    position: relative;
+    cursor: pointer;
+    text-decoration: none;
+    transform: translateY(-3px);
+}
+
+.left-container:after {
+    content: "";
+    display: block;
+    width: 1px;
+    height: 90px;
+    background-color: rgb(168, 178, 209);
+    margin: 0px auto;
+}
+
+

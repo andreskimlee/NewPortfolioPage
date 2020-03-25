@@ -27,8 +27,8 @@ class App extends React.Component {
     let loaded;
     if (this.state.loaded) {
       loaded = <div>
-        <NavBar></NavBar>
-        <MainContainer></MainContainer>
+        <NavBar ></NavBar>
+        <MainContainer ></MainContainer>
       </div>
     } else {
       loaded = <div className="loading-container">

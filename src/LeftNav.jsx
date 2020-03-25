@@ -1,5 +1,9 @@
 import React from 'react';
+import { ReactComponent as LinkedInSVG } from './static/linkedIn.svg'
+import { ReactComponent as GithubSVG } from './static/Github.svg'
+import { ReactComponent as AngelSVG } from './static/angel.svg'
 
+import './stylesheet/left.scss'
 
 
 class LeftNav extends React.Component {
@@ -15,7 +19,9 @@ class LeftNav extends React.Component {
     render() {
         return (
             <div className="left-container">
-                I'm Left
+                <LinkedInSVG className="linked-in"></LinkedInSVG>
+                <GithubSVG className="github"></GithubSVG>
+                <AngelSVG className="angel"></AngelSVG>
             </div>
         )
     }
