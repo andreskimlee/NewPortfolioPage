@@ -3,6 +3,8 @@ import { SlideDown } from 'react-slidedown'
 import 'react-slidedown/lib/slidedown.css'
 import './stylesheet/middle.scss'
 import funnyGif from './static/funny-comp.gif'
+import { ReactComponent as GithubSVG } from './static/Github.svg'
+import { ReactComponent as GoTo } from './static/goTo.svg'
 
 class Middle extends React.Component {
     constructor(props) {
@@ -76,12 +78,56 @@ class Middle extends React.Component {
                                         <li className="tech-items">Redux.js</li>
                                         <li className="tech-items">AWS S3</li>
                                     </ul>
+                                    <GithubSVG className="github"></GithubSVG>
+                                    <GoTo className="go-to"></GoTo>
                                 </div>
                                 <img className="project-1-pic" src="https://i.imgur.com/QZWEucU.png"></img>
 
 
                             </div>
-
+                            <div className="Project-1">
+                                <div className="project-2-rightside">
+                                    <h4 className="feat-header">Featured Project</h4>
+                                    <h5 className="Proj-name">Gratitude</h5>
+                                    <div className="proj-description">
+                                        <p className="proj-description-text">
+                                            Gratitude is a front-end only application that compares an individual's earnings to those from other countries.
+                                            Utilized D3’s built-in force simulation and collision to provide an interactive experience with the plotted data points.
+                                    </p>
+                                    </div>
+                                    <ul className="tech-list2-2">
+                                        <li className="tech-items">D3.js</li>
+                                        <li className="tech-items">Vanilla JS</li>
+                                        <li className="tech-items">HTML</li>
+                                        <li className="tech-items">CSS</li>
+                                    </ul>
+                                    <GithubSVG className="github"></GithubSVG>
+                                    <GoTo className="go-to"></GoTo>
+                                </div>
+                                <img className="project-2-pic" src="https://i.imgur.com/xIze5vM.png"></img>
+                            </div>
+                            <div className="Project-1">
+                                <div className="project-1-rightside">
+                                    <h4 className="feat-header">Featured Project</h4>
+                                    <h5 className="Proj-name">PiperHood</h5>
+                                    <div className="proj-description">
+                                        <p className="proj-description-text">
+                                            a full stack single page application that mimics the functionalities of Robinhood. (Stock Buying website)
+                                            Created a dynamic portfolio for users that are color coded based on the performance of the stock in comparison to its current live
+                                            price
+                                        </p>
+                                    </div>
+                                    <ul className="tech-list2">
+                                        <li className="tech-items">MongoDB</li>
+                                        <li className="tech-items">Express.js</li>
+                                        <li className="tech-items">React.js</li>
+                                        <li className="tech-items">Node.js</li>
+                                    </ul>
+                                    <GithubSVG className="github"></GithubSVG>
+                                    <GoTo className="go-to"></GoTo>
+                                </div>
+                                <img className="project-1-pic" src="https://i.imgur.com/tIvql1w.png"></img>
+                            </div>
                         </div>
                     </div>
                 </SlideDown>

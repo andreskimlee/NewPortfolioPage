@@ -1,6 +1,7 @@
 import React from 'react';
 import { ReactComponent as Logo } from './solvent.svg';
 import './stylesheet/navbar.scss'
+import Resume from './static/andres_lee.pdf'
 
 
 class NavBar extends React.Component {
@@ -22,7 +23,7 @@ class NavBar extends React.Component {
                     <li className="second"><div>02.</div>Experience</li>
                     <li className="third"><div>03.</div>Work</li>
                     <li className="fourth"><div>04.</div>Contact</li>
-                    <li className="fifth"><button className="resume-button" onClick="" >Resume</button></li>
+                    <li className="fifth"><a href={Resume}><button className="resume-button" >Resume</button></a></li>
                 </ul>
                 <a href="javascript:void(0);" class="icon" onclick="myFunction()">
                     <i class="fa fa-bars"></i>
