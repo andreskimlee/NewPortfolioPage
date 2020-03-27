@@ -17,10 +17,13 @@ class Main extends React.Component {
 
     render() {
         return (
-            <div className="main-container">
-                <LeftNav></LeftNav>
-                <Middle ></Middle>
-                <RightSide></RightSide>
+            <div>
+                <div className="main-container">
+                    <LeftNav></LeftNav>
+                    <Middle ></Middle>
+                    <RightSide></RightSide>
+                </div>
+                <div className="credits">Design inspired by https://brittanychiang.com/, built by Andres Kim Lee</div>
             </div>
         )
     }

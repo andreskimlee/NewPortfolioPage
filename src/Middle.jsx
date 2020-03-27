@@ -5,6 +5,7 @@ import './stylesheet/middle.scss'
 import funnyGif from './static/funny-comp.gif'
 import { ReactComponent as GithubSVG } from './static/Github.svg'
 import { ReactComponent as GoTo } from './static/goTo.svg'
+import { ReactComponent as Folder } from './static/folder.svg'
 
 class Middle extends React.Component {
     constructor(props) {
@@ -17,6 +18,11 @@ class Middle extends React.Component {
 
 
     render() {
+        var today = new Date();
+        var dd = String(today.getDate()).padStart(2, '0');
+        var mm = String(today.getMonth() + 1).padStart(2, '0'); //January is 0!
+        var yyyy = today.getFullYear();
+        today = mm + '/' + dd + '/' + yyyy;
         return (
             <div className="mid-container">
                 <SlideDown className={'my-dropdown-slidedown'}>
@@ -128,8 +134,160 @@ class Middle extends React.Component {
                                 </div>
                                 <img className="project-1-pic" src="https://i.imgur.com/tIvql1w.png"></img>
                             </div>
+                            <section className="noteworthy-container">
+                                <h4 className="header-4">Other Noteworthy Projects</h4>
+                                <div className="noteworthy-projects">
+
+                                    <div className="note-1">
+                                        <div className="inner-cont">
+                                            <header>
+                                                <div className="top-logo-cont">
+                                                    <Folder className="folder-svg"></Folder>
+                                                    <GoTo className="go-to"></GoTo>
+                                                </div>
+                                                <h5>Tic-Tac-Toe</h5>
+                                                <div className="descript-note">
+                                                    A Tic-Tac-Toe Game made with Ruby following OOP principles. Made to be played in terminal
+                                                </div>
+                                            </header>
+                                            <footer>
+                                                <ul className="tech-list">
+                                                    <li>Ruby</li>
+                                                </ul>
+                                            </footer>
+                                        </div>
+                                    </div>
+
+                                    <div className="note-1">
+                                        <div className="inner-cont">
+                                            <header>
+                                                <div className="top-logo-cont">
+                                                    <Folder className="folder-svg"></Folder>
+                                                    <GoTo className="go-to"></GoTo>
+                                                </div>
+                                                <h5>Outfitr</h5>
+                                                <div className="descript-note">
+                                                    An ongoing passion project to disrupt the social media space focused on providing a platform that caters towards influencers
+                                                </div>
+                                            </header>
+                                            <footer>
+                                                <ul className="tech-list">
+                                                    <li>MongoDB</li>
+                                                    <li>Express</li>
+                                                    <li>React</li>
+                                                    <li>Node.js</li>
+                                                </ul>
+                                            </footer>
+                                        </div>
+                                    </div>
+
+                                    <div className="note-1">
+                                        <div className="inner-cont">
+                                            <header>
+                                                <div className="top-logo-cont">
+                                                    <Folder className="folder-svg"></Folder>
+                                                    <GoTo className="go-to"></GoTo>
+                                                </div>
+                                                <h5>Mortgage Calculator</h5>
+                                                <div className="descript-note">
+                                                    A simple mortgage calculator that was developed using Salesforce and lightning components
+                                                </div>
+                                            </header>
+                                            <footer>
+                                                <ul className="tech-list">
+                                                    <li>Apex</li>
+                                                    <li>Salesforce</li>
+                                                </ul>
+                                            </footer>
+                                        </div>
+                                    </div>
+
+                                    <div className="note-1">
+                                        <div className="inner-cont">
+                                            <header>
+                                                <div className="top-logo-cont">
+                                                    <Folder className="folder-svg"></Folder>
+                                                    <GoTo className="go-to"></GoTo>
+                                                </div>
+                                                <h5>Duolingo Mock Ad</h5>
+                                                <div className="descript-note">
+                                                    A mock interactive ad that was developed for a take-home project. The ad utilizes voice and camera as well as web sockets.
+                                                </div>
+                                            </header>
+                                            <footer>
+                                                <ul className="tech-list">
+                                                    <li>socket.io</li>
+                                                    <li>JavaScript</li>
+                                                    <li>HTML</li>
+                                                    <li>CSS</li>
+                                                </ul>
+                                            </footer>
+                                        </div>
+                                    </div>
+
+                                    <div className="note-1">
+                                        <div className="inner-cont">
+                                            <header>
+                                                <div className="top-logo-cont">
+                                                    <Folder className="folder-svg"></Folder>
+                                                    <GoTo className="go-to"></GoTo>
+                                                </div>
+                                                <h5>TechJobs</h5>
+                                                <div className="descript-note">
+                                                    A front-end only project utilizing Github Jobs API to display through various filters.
+                                                </div>
+                                            </header>
+                                            <footer>
+                                                <ul className="tech-list">
+                                                    <li>React.js</li>
+                                                    <li>Redux.js</li>
+                                                    <li>HTML6</li>
+                                                    <li>CSS</li>
+                                                </ul>
+                                            </footer>
+                                        </div>
+                                    </div>
+
+                                    <div className="note-1">
+                                        <div className="inner-cont">
+                                            <header>
+                                                <div className="top-logo-cont">
+                                                    <Folder className="folder-svg"></Folder>
+                                                    <GoTo className="go-to"></GoTo>
+                                                </div>
+                                                <h5>BenchBnB</h5>
+                                                <div className="descript-note">
+                                                    a Lite version of AirBnB with benches instead!
+                                                </div>
+                                            </header>
+                                            <footer>
+                                                <ul className="tech-list">
+                                                    <li>React.js</li>
+                                                    <li>Redux.js</li>
+                                                    <li>Postgres</li>
+                                                    <li>Ruby on Rails</li>
+                                                </ul>
+                                            </footer>
+                                        </div>
+                                    </div>
+
+
+
+
+
+                                </div>
+                            </section>
+
                         </div>
                     </div>
+                    <div className="final-container">
+                        <div className="final-part">What's Next?</div>
+                        <div className="final-text">As of {today} I am looking for a software engineer position in the New York Metropolitan area. If you think I would be a good fit for your company
+                        please dont hesistate to reach out to me!
+                    </div>
+                        <a href="mailto:andreskimlee@gmail.com" target="_blank" rel="nofollow noopener noreferrer" class="contact-email">Say Hello</a>
+                    </div>
+
                 </SlideDown>
             </div>
 
