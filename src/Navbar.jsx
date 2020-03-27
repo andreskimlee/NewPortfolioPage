@@ -1,7 +1,7 @@
 import React from 'react';
 import { ReactComponent as Logo } from './solvent.svg';
 import './stylesheet/navbar.scss'
-import Resume from './static/andres_lee.pdf'
+import Resume from './static/AndresKimLee.pdf'
 
 class NavBar extends React.Component {
     constructor(props) {
