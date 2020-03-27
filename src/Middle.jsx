@@ -312,7 +312,7 @@ class Middle extends React.Component {
                 <div className="final-container">
                     <div className="final-part">What's Next?</div>
                     <div className="final-text">As of {today} I am looking for a software engineer position in the New York Metropolitan area. If you think I would be a good fit for your company
-                    please dont hesistate to reach out to me!
+                    please don't hesistate to reach out to me!
                     </div>
                     <a href="mailto:andreskimlee@gmail.com" target="_blank" rel="nofollow noopener noreferrer" class="contact-email">Say Hello</a>
                 </div>
