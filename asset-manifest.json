@@ -1,0 +1,35 @@
+{
+  "files": {
+    "main.css": "/NewPortfolioPage/static/css/main.6f9d7bf6.chunk.css",
+    "main.js": "/NewPortfolioPage/static/js/main.9988e9aa.chunk.js",
+    "main.js.map": "/NewPortfolioPage/static/js/main.9988e9aa.chunk.js.map",
+    "runtime-main.js": "/NewPortfolioPage/static/js/runtime-main.3c0810d8.js",
+    "runtime-main.js.map": "/NewPortfolioPage/static/js/runtime-main.3c0810d8.js.map",
+    "static/css/2.dd1866a9.chunk.css": "/NewPortfolioPage/static/css/2.dd1866a9.chunk.css",
+    "static/js/2.df832608.chunk.js": "/NewPortfolioPage/static/js/2.df832608.chunk.js",
+    "static/js/2.df832608.chunk.js.map": "/NewPortfolioPage/static/js/2.df832608.chunk.js.map",
+    "index.html": "/NewPortfolioPage/index.html",
+    "precache-manifest.907f22dc9632aaf4314b5ed761ca9f62.js": "/NewPortfolioPage/precache-manifest.907f22dc9632aaf4314b5ed761ca9f62.js",
+    "service-worker.js": "/NewPortfolioPage/service-worker.js",
+    "static/css/2.dd1866a9.chunk.css.map": "/NewPortfolioPage/static/css/2.dd1866a9.chunk.css.map",
+    "static/css/main.6f9d7bf6.chunk.css.map": "/NewPortfolioPage/static/css/main.6f9d7bf6.chunk.css.map",
+    "static/js/2.df832608.chunk.js.LICENSE.txt": "/NewPortfolioPage/static/js/2.df832608.chunk.js.LICENSE.txt",
+    "static/media/AndresKimLee.pdf": "/NewPortfolioPage/static/media/AndresKimLee.6002505a.pdf",
+    "static/media/Main.scss": "/NewPortfolioPage/static/media/CalibreBlack.8d48552b.otf",
+    "static/media/Github.41e0aa46.svg": "/NewPortfolioPage/static/media/Github.41e0aa46.svg",
+    "static/media/angel.59d4e824.svg": "/NewPortfolioPage/static/media/angel.59d4e824.svg",
+    "static/media/folder.9bfc5f70.svg": "/NewPortfolioPage/static/media/folder.9bfc5f70.svg",
+    "static/media/funny-comp.gif": "/NewPortfolioPage/static/media/funny-comp.7cbb5b98.gif",
+    "static/media/goTo.ccaacdf0.svg": "/NewPortfolioPage/static/media/goTo.ccaacdf0.svg",
+    "static/media/linkedIn.fe93bbb5.svg": "/NewPortfolioPage/static/media/linkedIn.fe93bbb5.svg",
+    "static/media/loading.gif": "/NewPortfolioPage/static/media/loading.783ffe83.gif",
+    "static/media/solvent.71469e6b.svg": "/NewPortfolioPage/static/media/solvent.71469e6b.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.3c0810d8.js",
+    "static/css/2.dd1866a9.chunk.css",
+    "static/js/2.df832608.chunk.js",
+    "static/css/main.6f9d7bf6.chunk.css",
+    "static/js/main.9988e9aa.chunk.js"
+  ]
+}
