@@ -1,11 +1,13 @@
 import React from 'react';
-import { SlideDown } from 'react-slidedown'
 import 'react-slidedown/lib/slidedown.css'
 import './stylesheet/middle.scss'
 import funnyGif from './static/funny-comp.gif'
 import { ReactComponent as GithubSVG } from './static/Github.svg'
 import { ReactComponent as GoTo } from './static/goTo.svg'
 import { ReactComponent as Folder } from './static/folder.svg'
+import ScrollAnimation from 'react-animate-on-scroll';
+import './stylesheet/animate.css'
+
 
 class Middle extends React.Component {
     constructor(props) {
@@ -25,25 +27,34 @@ class Middle extends React.Component {
         today = mm + '/' + dd + '/' + yyyy;
         return (
             <div className="mid-container">
-                <SlideDown className={'my-dropdown-slidedown'}>
-                    <p>Hi, my name is</p>
 
+                <p>Hi, my name is</p>
 
+                <ScrollAnimation animateIn="fadeIn" delay="200">
                     <h1 className="name-text">Andres Kim Lee.</h1>
+                </ScrollAnimation>
+                <ScrollAnimation animateIn="fadeIn" delay="300">
                     <h1 className="second-text">I build things for the web.</h1>
-
+                </ScrollAnimation>
+                <ScrollAnimation animateIn="fadeIn" delay="400">
                     <p className="third-text">I'm a software engineer based in New York, NY specializing in building full stack applications and websites with a bias towards front-end development.</p>
+                </ScrollAnimation>
+                <ScrollAnimation animateIn="fadeIn" delay="500">
                     <button className="Get-In-Touch"> Get In Touch </button>
-                    <div className="About-Me-Container">
+                </ScrollAnimation>
+                <div className="About-Me-Container">
+                    <ScrollAnimation animateIn="fadeIn">
                         <div className="About-me-header">About Me</div>
                         <div className="prof-container">
                             <p className="bio-text">
+
                                 Hello! I'm Andres, a software engineer based in New York, NY.
                                 Whether it's cooking, photography, or thinking of my next big idea to pitch on Shark Tank,
                                 I have a creative side to me that I have always enjoyed exploring and software engineering has
                                 been an awesome medium for me to leverage that. I love learning new technologies and challenging
                                 myself to think logically, methodically, and creatively.
-                                <br></br>
+
+                            <br></br>
                                 <br></br>
                                 Here are a few technologies I've been working with recently:
                                 <ul className="tech-list">
@@ -63,10 +74,14 @@ class Middle extends React.Component {
                                 <img className="funny-gif" src={funnyGif}></img>
                             </div>
                         </div>
-                    </div>
-                    <div className="Experience-Container">
+                    </ScrollAnimation>
+                </div>
+                <div className="Experience-Container">
+                    <ScrollAnimation animateIn="fadeIn">
                         <div className="experience-header">Some Things I've Built</div>
-                        <div className="innter-container">
+                    </ScrollAnimation>
+                    <div className="innter-container">
+                        <ScrollAnimation animateIn="zoomIn">
                             <div className="Project-1">
                                 <div className="project-1-rightside">
                                     <h4 className="feat-header">Featured Project</h4>
@@ -84,13 +99,15 @@ class Middle extends React.Component {
                                         <li className="tech-items">Redux.js</li>
                                         <li className="tech-items">AWS S3</li>
                                     </ul>
-                                    <GithubSVG className="github"></GithubSVG>
-                                    <GoTo className="go-to"></GoTo>
+                                    <a href="https://github.com/andreskimlee/Butterflyr"><GithubSVG className="github"></GithubSVG></a>
+                                    <a href="http://butterflyr.herokuapp.com/"><GoTo className="go-to"></GoTo></a>
                                 </div>
                                 <img className="project-1-pic" src="https://i.imgur.com/QZWEucU.png"></img>
 
 
                             </div>
+                        </ScrollAnimation>
+                        <ScrollAnimation animateIn="zoomIn">
                             <div className="Project-1">
                                 <div className="project-2-rightside">
                                     <h4 className="feat-header">Featured Project</h4>
@@ -107,11 +124,13 @@ class Middle extends React.Component {
                                         <li className="tech-items">HTML</li>
                                         <li className="tech-items">CSS</li>
                                     </ul>
-                                    <GithubSVG className="github"></GithubSVG>
-                                    <GoTo className="go-to"></GoTo>
+                                    <a href="https://github.com/andreskimlee/Gratitude-"><GithubSVG className="github"></GithubSVG></a>
+                                    <a href="https://andreskimlee.github.io/Gratitude-/"><GoTo className="go-to"></GoTo></a>
                                 </div>
                                 <img className="project-2-pic" src="https://i.imgur.com/xIze5vM.png"></img>
                             </div>
+                        </ScrollAnimation>
+                        <ScrollAnimation animateIn="zoomIn">
                             <div className="Project-1">
                                 <div className="project-1-rightside">
                                     <h4 className="feat-header">Featured Project</h4>
@@ -129,21 +148,26 @@ class Middle extends React.Component {
                                         <li className="tech-items">React.js</li>
                                         <li className="tech-items">Node.js</li>
                                     </ul>
-                                    <GithubSVG className="github"></GithubSVG>
-                                    <GoTo className="go-to"></GoTo>
+                                    <a href="https://github.com/andreskimlee/WTT-FStack"><GithubSVG className="github"></GithubSVG></a>
+                                    <a href="https://techtalentfullstackproject.herokuapp.com/"><GoTo className="go-to"></GoTo></a>
                                 </div>
                                 <img className="project-1-pic" src="https://i.imgur.com/tIvql1w.png"></img>
                             </div>
-                            <section className="noteworthy-container">
-                                <h4 className="header-4">Other Noteworthy Projects</h4>
-                                <div className="noteworthy-projects">
+                        </ScrollAnimation>
 
+
+                        <section className="noteworthy-container">
+                            <ScrollAnimation animateIn="fadeIn">
+                                <h4 className="header-4">Other Noteworthy Projects</h4>
+                            </ScrollAnimation>
+                            <div className="noteworthy-projects">
+                                <ScrollAnimation animateIn="fadeIn" delay="100">
                                     <div className="note-1">
                                         <div className="inner-cont">
                                             <header>
                                                 <div className="top-logo-cont">
                                                     <Folder className="folder-svg"></Folder>
-                                                    <GoTo className="go-to"></GoTo>
+                                                    <a href="https://github.com/andreskimlee/tictactoe"><GoTo className="go-to"></GoTo></a>
                                                 </div>
                                                 <h5>Tic-Tac-Toe</h5>
                                                 <div className="descript-note">
@@ -157,13 +181,14 @@ class Middle extends React.Component {
                                             </footer>
                                         </div>
                                     </div>
-
+                                </ScrollAnimation>
+                                <ScrollAnimation animateIn="fadeIn" delay="300">
                                     <div className="note-1">
                                         <div className="inner-cont">
                                             <header>
                                                 <div className="top-logo-cont">
                                                     <Folder className="folder-svg"></Folder>
-                                                    <GoTo className="go-to"></GoTo>
+                                                    <a href="https://github.com/gmcln-rct/MERNproject"><GoTo className="go-to"></GoTo></a>
                                                 </div>
                                                 <h5>Outfitr</h5>
                                                 <div className="descript-note">
@@ -180,13 +205,14 @@ class Middle extends React.Component {
                                             </footer>
                                         </div>
                                     </div>
-
+                                </ScrollAnimation>
+                                <ScrollAnimation animateIn="fadeIn" delay="500">
                                     <div className="note-1">
                                         <div className="inner-cont">
                                             <header>
                                                 <div className="top-logo-cont">
                                                     <Folder className="folder-svg"></Folder>
-                                                    <GoTo className="go-to"></GoTo>
+                                                    <a href="https://github.com/andreskimlee/FinClinic"><GoTo className="go-to"></GoTo></a>
                                                 </div>
                                                 <h5>Mortgage Calculator</h5>
                                                 <div className="descript-note">
@@ -201,13 +227,14 @@ class Middle extends React.Component {
                                             </footer>
                                         </div>
                                     </div>
-
+                                </ScrollAnimation>
+                                <ScrollAnimation animateIn="fadeIn" delay="100">
                                     <div className="note-1">
                                         <div className="inner-cont">
                                             <header>
                                                 <div className="top-logo-cont">
                                                     <Folder className="folder-svg"></Folder>
-                                                    <GoTo className="go-to"></GoTo>
+                                                    <a href="https://github.com/andreskimlee/frontend-project-tbd"><GoTo className="go-to"></GoTo></a>
                                                 </div>
                                                 <h5>Duolingo Mock Ad</h5>
                                                 <div className="descript-note">
@@ -224,13 +251,14 @@ class Middle extends React.Component {
                                             </footer>
                                         </div>
                                     </div>
-
+                                </ScrollAnimation>
+                                <ScrollAnimation animateIn="fadeIn" delay="300">
                                     <div className="note-1">
                                         <div className="inner-cont">
                                             <header>
                                                 <div className="top-logo-cont">
                                                     <Folder className="folder-svg"></Folder>
-                                                    <GoTo className="go-to"></GoTo>
+                                                    <a href="https://github.com/andreskimlee/TechJobs"><GoTo className="go-to"></GoTo></a>
                                                 </div>
                                                 <h5>TechJobs</h5>
                                                 <div className="descript-note">
@@ -247,13 +275,14 @@ class Middle extends React.Component {
                                             </footer>
                                         </div>
                                     </div>
-
+                                </ScrollAnimation>
+                                <ScrollAnimation animateIn="fadeIn" delay="500">
                                     <div className="note-1">
                                         <div className="inner-cont">
                                             <header>
                                                 <div className="top-logo-cont">
                                                     <Folder className="folder-svg"></Folder>
-                                                    <GoTo className="go-to"></GoTo>
+                                                    <a href="https://github.com/andreskimlee/BenchBnB-2"><GoTo className="go-to"></GoTo></a>
                                                 </div>
                                                 <h5>BenchBnB</h5>
                                                 <div className="descript-note">
@@ -270,25 +299,23 @@ class Middle extends React.Component {
                                             </footer>
                                         </div>
                                     </div>
+                                </ScrollAnimation>
 
 
 
 
+                            </div>
+                        </section>
 
-                                </div>
-                            </section>
-
-                        </div>
                     </div>
-                    <div className="final-container">
-                        <div className="final-part">What's Next?</div>
-                        <div className="final-text">As of {today} I am looking for a software engineer position in the New York Metropolitan area. If you think I would be a good fit for your company
-                        please dont hesistate to reach out to me!
+                </div>
+                <div className="final-container">
+                    <div className="final-part">What's Next?</div>
+                    <div className="final-text">As of {today} I am looking for a software engineer position in the New York Metropolitan area. If you think I would be a good fit for your company
+                    please dont hesistate to reach out to me!
                     </div>
-                        <a href="mailto:andreskimlee@gmail.com" target="_blank" rel="nofollow noopener noreferrer" class="contact-email">Say Hello</a>
-                    </div>
-
-                </SlideDown>
+                    <a href="mailto:andreskimlee@gmail.com" target="_blank" rel="nofollow noopener noreferrer" class="contact-email">Say Hello</a>
+                </div>
             </div>
 
         )

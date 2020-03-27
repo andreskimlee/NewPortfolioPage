@@ -19,10 +19,10 @@ class LeftNav extends React.Component {
     render() {
         return (
             <div className="left-container">
-                <LinkedInSVG className="linked-in"></LinkedInSVG>
-                <GithubSVG className="github"></GithubSVG>
-                <AngelSVG className="angel"></AngelSVG>
-            </div>
+                <a href="https://www.linkedin.com/in/andres-k-bb9b35196/"><LinkedInSVG className="linked-in"></LinkedInSVG></a>
+                <a href="https://github.com/andreskimlee"><GithubSVG className="github"></GithubSVG></a>
+                <a href="https://angel.co/andres-kim-lee"><AngelSVG className="angel"></AngelSVG></a>
+            </div >
         )
     }
 }

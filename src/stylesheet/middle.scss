@@ -284,8 +284,10 @@ $color_3: #eeeeee;
 
 .go-to {
     fill: $color_2;
-    width: 5%;
-    margin-bottom: 10%;
+    width: 20px;
+    height: 20px;
+    margin-left: 10px;
+    margin-bottom: 10px;
 }
 
 .go-to:hover {
@@ -343,7 +345,6 @@ $color_3: #eeeeee;
 .note-1:hover {
     transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1) 0s;
     fill:$color_1;
-    display: inline-block;
     text-decoration-skip-ink: auto;
     color: inherit;
     position: relative;
@@ -410,7 +411,7 @@ h5 {
 }
 
 .final-part::before {
-    content: "04.";
+    content: "03.";
     margin-right: 10px;
     font-family: "SF Mono", "Fira Code", "Fira Mono", "Roboto Mono", "Lucida Console", Monaco, monospace;
     font-weight: normal;
@@ -432,7 +433,7 @@ h5 {
     color: $color_1;
     background-color: transparent;
     font-size: 14px;
-    font-family: "SF Mono", "Fira Code", "Fira Mono", "Roboto Mono", "Lucida Console", Monaco, monospace;
+    font-family: monospace;
     line-height: 1;
     cursor: pointer;
     margin-top: 50px;
@@ -452,6 +453,11 @@ h5 {
     text-decoration: none;
     transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1) 0s;
     margin-bottom: 25%;
+}
+
+.contact-email:hover {
+    background-color: $color_1;
+    color: white;
 }
 
 .final-container {

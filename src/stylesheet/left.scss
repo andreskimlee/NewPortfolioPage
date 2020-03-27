@@ -21,19 +21,22 @@ $color_3: #eeeeee;
 
 .linked-in {
     fill: $color_2;
-    width: 10%;
-    margin-bottom: 10%;
+    width: 20px;
+    height: 20px;
+    margin-bottom: 10px;
 }
 
 .github {
     fill: $color_2;
-    width: 10%;
-    margin-bottom: 10%;
+    width: 20px;
+    height: 20px;
+   margin-bottom: 10px;
 }
 
 .angel {
-    width: 10%;
-    margin-bottom: 10%;
+    width: 20px;
+    height: 20px;
+    margin-bottom: 10px;
     g {
         path {
             fill: $color_2;
@@ -42,7 +45,7 @@ $color_3: #eeeeee;
     height: 30px;
 }
 
-.linked-in:hover, .github:hover {
+.linked-in:hover, .github:hover, .angel:hover {
     transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1) 0s;
     fill:$color_1;
     display: inline-block;
@@ -54,6 +57,19 @@ $color_3: #eeeeee;
     transform: translateY(-3px);
 }
 
+
+.angel:hover {
+    
+    g {
+        path {
+            fill: $color_1
+        }
+    }
+    
+}
+
+
+
 .left-container:after {
     content: "";
     display: block;
@@ -62,5 +78,7 @@ $color_3: #eeeeee;
     background-color: rgb(168, 178, 209);
     margin: 0px auto;
 }
+
+
 
 
