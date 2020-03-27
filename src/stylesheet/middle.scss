@@ -477,3 +477,10 @@ h5 {
         align-items: center;
         padding-top: 2.5%;
     }
+
+    input:focus,
+    select:focus,
+    textarea:focus,
+    button:focus {
+        outline: none;
+    }

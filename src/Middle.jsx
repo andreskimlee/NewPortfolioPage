@@ -40,7 +40,7 @@ class Middle extends React.Component {
                     <p className="third-text">I'm a software engineer based in New York, NY specializing in building full stack applications and websites with a bias towards front-end development.</p>
                 </ScrollAnimation>
                 <ScrollAnimation animateIn="fadeIn" delay="500">
-                    <button className="Get-In-Touch"> Get In Touch </button>
+                    <a href="mailto:andreskimlee@gmail.com"><button className="Get-In-Touch"> Get In Touch </button></a>
                 </ScrollAnimation>
                 <div className="About-Me-Container">
                     <ScrollAnimation animateIn="fadeIn">
